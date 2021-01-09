@@ -83,12 +83,6 @@ $('button').click(function(event){
             }
         }
 
-
-
-
-        
-        
-        if(gamePlaying){
             
             
             //  Checking winning along the columns.....
@@ -115,9 +109,9 @@ $('button').click(function(event){
             }
 
             
-
+        if(gamePlaying){
+            
             //  Changing Players...
-        
             activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
             var Player, Color;
             activePlayer === 0 ? Player = player0 : Player = player1;
