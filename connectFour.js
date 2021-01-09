@@ -97,8 +97,8 @@ $('button').click(function(event){
                 for(var i = 0; i<4; i++){
                     if( (colElements.eq(i).css("background-color") === "rgb(0, 0, 255)" && colElements.eq(i+1).css("background-color") === "rgb(0, 0, 255)" && colElements.eq(i+2).css("background-color") === "rgb(0, 0, 255)" && colElements.eq(i+3).css("background-color") === "rgb(0, 0, 255)")  ||   (colElements.eq(i).css("background-color") === "rgb(255, 0, 0)" && colElements.eq(i+1).css("background-color") === "rgb(255, 0, 0)" && colElements.eq(i+2).css("background-color") === "rgb(255, 0, 0)" && colElements.eq(i+3).css("background-color") === "rgb(255, 0, 0)") ){
     //                    console.log("YUPPP!!");
-                        activePlayer === 0 ? player = player0 : player = player1;
-                        $('h3').text(player + " won!!!");
+                        activePlayer === 0 ? Player = player0 : Player = player1;
+                        $('h3').text(Player + " won!!!");
                         gamePlaying = false;
                         break;
                     }else{
@@ -117,8 +117,6 @@ $('button').click(function(event){
             activePlayer === 0 ? Player = player0 : Player = player1;
             activePlayer === 0 ? Color = "blue" : Color = "red";
             $('h3').text(Player + ": it's your turn please pick a column to drop your " + Color + " chip.");
-            
-            
             
         }
 
